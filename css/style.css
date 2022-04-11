@@ -742,12 +742,14 @@
     .page__getintouch {
     }
     .getintouch {
+        padding: 80px 0;
     }
     .getintouch__container {
     }
     ._container {
     }
     .getintouch__header {
+        padding-bottom: 80px;
     }
     .header-block {
     }
@@ -760,17 +762,40 @@
         flex: 0 1 33.33%;
         text-align: center;
         justify-content: center;
+        margin: -50px -2px;
+  
     }
+    @media (max-width: 810px){
+        .getintouch__items{
+            flex: 0 1 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+    }
+ 
     .getintouch__item {
-      
+        margin: 50px 2px;
+        background-color: #fff;
+        padding: 50px 2px ;
+        box-shadow: 0px 13px 19px rgb(0 0 0 / 7%);
+        flex: 1 1 auto;
+    }
+    @media (max-width: 810px){
+        .getintouch__item {
+            margin: 6px -5px;
+            padding: 6px 5px ;
+            }
     }
     .item-getintouch {
+ 
     }
     .item-getintouch__icon {
     
     }
     .item-getintouch__icon img{
-        min-height: 72px;
+        height: 72px;
+        margin-bottom: 15px;
  
     }
     .item-getintouch__emails {
@@ -778,8 +803,42 @@
     }
     .item-getintouch__email {
         display: flex;
+        color: inherit;
+        font-weight: 600;
+        line-height: calc(24 / 14 * 100%);
+        letter-spacing: 0.2px;
+        text-align: center;
+        display: block;
+    }
+    .item-getintouch__email:hover{
+        text-decoration: underline;
     }
     .item-getintouch__label {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: calc(24 / 16 * 100%);
+        letter-spacing: 0.1px;
+        padding: 15px 0;
     }
+
     .item-getintouch__button {
+        font-weight: 600;
+        line-height: calc(24 / 14 * 100%);
+        letter-spacing: 0.2px;
+        border-radius: 5px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 20px;
+        color: #FF7B47;
+        border: 1px solid #FF7B47;
+        transition: 0.25s;
+        max-width: 248px;
+        margin: 0 auto;
+    }
+    .item-getintouch__button:hover{
+        background-color: #FF7B47;
+        color: #fff;
     }
